@@ -44,7 +44,7 @@ app.use('/api/wishlist',wishlistRoutes)
 app.use('/api/createorder',checkoutRoutes)
 
 app.get("/health", (req, res) => {
-    console.log("Health is ok!");
+    res.send("health is ok");
 });
 
 const Port = process.env.PORT || 3000
